@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="jurídico 1" label="O que precisou" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Recursos humanos 1" sequence="0" value="rh 1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Recursos humanos 2" sequence="1" value="rh 2"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Instalações 1" sequence="2" value="instalacoes 1"/>
+                <element inactive_on_update="false" label="Instalações 2" sequence="3" value="instalacoes 2"/>
+                <element inactive_on_update="false" label="Jurídico 1" sequence="4" value="jurídico 1"/>
+                <element inactive_on_update="false" label="Jurídico 2" sequence="5" value="jurídico 2"/>
+                <element inactive_on_update="false" label="Tecnologia 1" sequence="6" value="tecnologia 1"/>
+                <element inactive_on_update="false" label="Tecnologia 2" sequence="7" value="tecnologia 2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Quando precisou" mandatory="true" max_length="40" name="u_quando_precisou" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Requisitado por" mandatory="true" max_length="32" name="u_requisitado_por" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="juridico" label="Tipo de requisição" mandatory="true" max_length="40" name="u_tipo_de_requisicao" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Recursos humanos" sequence="0" value="rh"/>
+                <element inactive_on_update="false" label="Instalações" sequence="1" value="instalacoes"/>
+                <element inactive_on_update="false" label="Jurídico" sequence="2" value="juridico"/>
+                <element inactive_on_update="false" label="Tecnologia" sequence="3" value="ti"/>
+            </choice>
+        </element>
+    </element>
+</database>
